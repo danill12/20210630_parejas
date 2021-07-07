@@ -1,10 +1,25 @@
+var contador = 0
+
 let cardsArray = () =>
 {
-    return Array.from(document.getElementsByClassName("card"));
+    //return Array.from(document.getElementsByClassName("card"));
+    return Array.from(document.querySelectorAll(".card:not(.paired)"));
+
 }
-reparte = () =>
+
+let revealedArray = () =>
+{
+    return Array.from(document.getElementsByClassName("revealed"));
+}
+
+
+let reparte = () =>
 {
     let myCards = cardsArray();
+
+    console.log(myCards)
+
+
 
     let options = [
         "red",
@@ -12,43 +27,84 @@ reparte = () =>
         "black",
         "black",
     ]
+
     for (let i = 0; i < myCards.length; i++) {
         let position = Math.floor(Math.random() * options.length);
         myCards[i].classList.add(options[position]);
         options.splice(position, 1);
-        
     }
 }
-revealedCard = () =>
+
+let clickFunction = function() {
+
+    if (this.classList.contains("paired"))
+        return
+
+    if (this.classList.contains("revealed"))
+    {
+        this.classList.remove("revealed");
+        contador--
+    }
+    else
+    {
+        this.classList.add("revealed");
+        contador++
+    }
+
+    console.log(`REVEAL: ${contador}`)
+
+    if (contador == 2) {
+        checkValue = checkPair();
+
+        console.log(`checkValue: ${checkValue}`)
+
+        revealed = revealedArray()
+
+        if (checkValue) {
+            for (let i = 0; i < revealed.length; i++) {
+                revealed[i].classList.add("paired");
+            }
+        }
+        else {
+            
+            for (let i = 0; i < revealed.length; i++) {
+                revealed[i].classList.remove("revealed");
+            }
+        }
+        contador = 0
+
+        if (cardsArray().length == 0)
+            alert("Victory")
+    }
+}
+
+let revealedCard = () =>
 {   
     myCards = cardsArray();
     
-        cardsArray().forEach(card =>
-            {
-                card.onclick = function()
-                {
-                    this.classList.toggle("revealed");
-                };
-                checkValue = checkPair();
-                if (checkValue == false){
-                    for (let i = 0; i < myCards.length; i++) {
-                        myCards[i].classList.remove("revealed");
-                    }
-                }
-            });
-            
+    myCards.forEach(card =>
+    {
+        card.onclick = clickFunction
+    });            
 }
-checkPair = () =>
+
+let checkPair = () =>
 {
-    let uncover = Array.from(document.getElementsByClassName("revealed"))
-    for (let i = 0; i < uncover.length; i++) {
-        if (uncover[i] == "card red revealed"){
-            return true
-        }
-        else{
-            return false
-        }
+    let revealed = revealedArray()
+    let cartasRojas = 0
+    let cartasNegras = 0
+
+    for (let i = 0; i < revealed.length; i++) {
+        if (revealed[i].classList.contains("red")) 
+            cartasRojas++
+        if (revealed[i].classList.contains("black")) 
+            cartasNegras++
     }
+
+    if (cartasRojas == 2 || cartasNegras == 2)
+        return true
+    
+    return false
 }
 
 window.onload = () =>
