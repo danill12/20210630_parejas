@@ -42,8 +42,8 @@ let clickFunction = function() {
 
     if (this.classList.contains("revealed"))
     {
-        this.classList.remove("revealed");
-        contador--
+        //this.classList.remove("revealed");
+        //contador--
     }
     else
     {
@@ -72,7 +72,6 @@ let clickFunction = function() {
             }
         }
         contador = 0
-
         if (cardsArray().length == 0)
             alert("Victory")
     }
