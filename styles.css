@@ -1,0 +1,43 @@
+body{
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: row;
+}
+.board{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:sandybrown;
+    width: 500px;
+    height: 500px;
+    align-items: center;
+}
+.card{
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    background-color:bisque;
+
+}
+.card.red{
+    background-color:bisque;
+}
+.card.red.revealed{
+    background-color: red;
+}
+
+.card.black{
+    background-color:bisque;
+}
+.card.black.revealed{   
+    background-color: black;
+}
+.tutorial{
+    background-color: darkcyan;
+    width: 65%;
+    height: auto;
+    padding: 10px;  
+}
+
+.row {
+    display: flex;
+}
