@@ -8,71 +8,20 @@ body{
     flex-wrap: wrap;
     background-color:sandybrown;
     width: 1000px;
-    height: 1000px;
+    height: 750px;
     align-items: center;
 }
 .card{
     width: 150px;
     height: 150px;
     margin: 50px;
-    background-color:bisque;
 
 }
-.card.red{
+
+.card:not(.revealed) {
     background-color:bisque;
-}
-.card.red.revealed{
-    background-color: red;
 }
 
-.card.black{
-    background-color:bisque;
-}
-.card.black.revealed{   
-    background-color: black;
-}
-
-.card.blue{
-    background-color:bisque;
-}
-.card.blue.revealed{   
-    background-color: blue;
-}
-
-.card.yellow{
-    background-color:bisque;
-}
-.card.yellow.revealed{   
-    background-color: yellow;
-}
-
-.card.green{
-    background-color:bisque;
-}
-.card.green.revealed{   
-    background-color: green;
-}
-
-.card.purple{
-    background-color:bisque;
-}
-.card.purple.revealed{   
-    background-color:purple;
-}
-
-.card.brown{
-    background-color:bisque;
-}
-.card.brown.revealed{   
-    background-color:brown;
-}
-
-.card.orange{
-    background-color:bisque;
-}
-.card.orange.revealed{   
-    background-color:orange;
-}
 
 .tutorial{
     background-color: darkcyan;
@@ -94,3 +43,150 @@ body{
     border-radius: 6px;
     border: 2px solid #0016b0;
 }
+
+.card.revealed.black { background-color: black}    
+.card.revealed.silver { background-color: silver}  
+.card.revealed.gray { background-color: gray}  
+.card.revealed.white { background-color: white}    
+.card.revealed.maroon { background-color: maroon}  
+.card.revealed.red { background-color: red}    
+.card.revealed.purple { background-color: purple}  
+.card.revealed.fuchsia { background-color: fuchsia}    
+.card.revealed.green { background-color: green}    
+.card.revealed.lime { background-color: lime}  
+.card.revealed.olive { background-color: olive}    
+.card.revealed.yellow { background-color: yellow}  
+.card.revealed.navy { background-color: navy}  
+.card.revealed.blue { background-color: blue}  
+.card.revealed.teal { background-color: teal}  
+.card.revealed.aqua { background-color: aqua}  
+.card.revealed.orange { background-color: orange}  
+.card.revealed.aliceblue { background-color: aliceblue}    
+.card.revealed.antiquewhite { background-color: antiquewhite}  
+.card.revealed.aquamarine { background-color: aquamarine}  
+.card.revealed.azure { background-color: azure}    
+.card.revealed.beige { background-color: beige}    
+.card.revealed.bisque { background-color: bisque}  
+.card.revealed.blanchedalmond { background-color: blanchedalmond}  
+.card.revealed.blueviolet { background-color: blueviolet}  
+.card.revealed.brown { background-color: brown}    
+.card.revealed.burlywood { background-color: burlywood}    
+.card.revealed.cadetblue { background-color: cadetblue}    
+.card.revealed.chartreuse { background-color: chartreuse}  
+.card.revealed.chocolate { background-color: chocolate}    
+.card.revealed.coral { background-color: coral}    
+.card.revealed.cornflowerblue { background-color: cornflowerblue}  
+.card.revealed.cornsilk { background-color: cornsilk}  
+.card.revealed.crimson { background-color: crimson}    
+.card.revealed.darkblue { background-color: darkblue}  
+.card.revealed.darkcyan { background-color: darkcyan}  
+.card.revealed.darkgoldenrod { background-color: darkgoldenrod}    
+.card.revealed.darkgray { background-color: darkgray}  
+.card.revealed.darkgreen { background-color: darkgreen}    
+.card.revealed.darkgrey { background-color: darkgrey}  
+.card.revealed.darkkhaki { background-color: darkkhaki}    
+.card.revealed.darkmagenta { background-color: darkmagenta}    
+.card.revealed.darkolivegreen { background-color: darkolivegreen}  
+.card.revealed.darkorange { background-color: darkorange}  
+.card.revealed.darkorchid { background-color: darkorchid}  
+.card.revealed.darkred { background-color: darkred}    
+.card.revealed.darksalmon { background-color: darksalmon}  
+.card.revealed.darkseagreen { background-color: darkseagreen}  
+.card.revealed.darkslateblue { background-color: darkslateblue}    
+.card.revealed.darkslategray { background-color: darkslategray}    
+.card.revealed.darkslategrey { background-color: darkslategrey}    
+.card.revealed.darkturquoise { background-color: darkturquoise}    
+.card.revealed.darkviolet { background-color: darkviolet}  
+.card.revealed.deeppink { background-color: deeppink}  
+.card.revealed.deepskyblue { background-color: deepskyblue}    
+.card.revealed.dimgray { background-color: dimgray}    
+.card.revealed.dimgrey { background-color: dimgrey}    
+.card.revealed.dodgerblue { background-color: dodgerblue}  
+.card.revealed.firebrick { background-color: firebrick}    
+.card.revealed.floralwhite { background-color: floralwhite}    
+.card.revealed.forestgreen { background-color: forestgreen}    
+.card.revealed.gainsboro { background-color: gainsboro}    
+.card.revealed.ghostwhite { background-color: ghostwhite}  
+.card.revealed.gold { background-color: gold}  
+.card.revealed.goldenrod { background-color: goldenrod}    
+.card.revealed.greenyellow { background-color: greenyellow}    
+.card.revealed.grey { background-color: grey}  
+.card.revealed.honeydew { background-color: honeydew}  
+.card.revealed.hotpink { background-color: hotpink}    
+.card.revealed.indianred { background-color: indianred}    
+.card.revealed.indigo { background-color: indigo}  
+.card.revealed.ivory { background-color: ivory}    
+.card.revealed.khaki { background-color: khaki}    
+.card.revealed.lavender { background-color: lavender}  
+.card.revealed.lavenderblush { background-color: lavenderblush}    
+.card.revealed.lawngreen { background-color: lawngreen}    
+.card.revealed.lemonchiffon { background-color: lemonchiffon}  
+.card.revealed.lightblue { background-color: lightblue}    
+.card.revealed.lightcoral { background-color: lightcoral}  
+.card.revealed.lightcyan { background-color: lightcyan}    
+.card.revealed.lightgoldenrodyellow { background-color: lightgoldenrodyellow}  
+.card.revealed.lightgray { background-color: lightgray}    
+.card.revealed.lightgreen { background-color: lightgreen}  
+.card.revealed.lightgrey { background-color: lightgrey}    
+.card.revealed.lightpink { background-color: lightpink}    
+.card.revealed.lightsalmon { background-color: lightsalmon}    
+.card.revealed.lightseagreen { background-color: lightseagreen}    
+.card.revealed.lightskyblue { background-color: lightskyblue}  
+.card.revealed.lightslategray { background-color: lightslategray}  
+.card.revealed.lightslategrey { background-color: lightslategrey}  
+.card.revealed.lightsteelblue { background-color: lightsteelblue}  
+.card.revealed.lightyellow { background-color: lightyellow}    
+.card.revealed.limegreen { background-color: limegreen}    
+.card.revealed.linen { background-color: linen}    
+.card.revealed.mediumaquamarine { background-color: mediumaquamarine}  
+.card.revealed.mediumblue { background-color: mediumblue}  
+.card.revealed.mediumorchid { background-color: mediumorchid}  
+.card.revealed.mediumpurple { background-color: mediumpurple}  
+.card.revealed.mediumseagreen { background-color: mediumseagreen}  
+.card.revealed.mediumslateblue { background-color: mediumslateblue}    
+.card.revealed.mediumspringgreen { background-color: mediumspringgreen}    
+.card.revealed.mediumturquoise { background-color: mediumturquoise}    
+.card.revealed.mediumvioletred { background-color: mediumvioletred}    
+.card.revealed.midnightblue { background-color: midnightblue}  
+.card.revealed.mintcream { background-color: mintcream}    
+.card.revealed.mistyrose { background-color: mistyrose}    
+.card.revealed.moccasin { background-color: moccasin}  
+.card.revealed.navajowhite { background-color: navajowhite}    
+.card.revealed.oldlace { background-color: oldlace}    
+.card.revealed.olivedrab { background-color: olivedrab}    
+.card.revealed.orangered { background-color: orangered}    
+.card.revealed.orchid { background-color: orchid}  
+.card.revealed.palegoldenrod { background-color: palegoldenrod}    
+.card.revealed.palegreen { background-color: palegreen}    
+.card.revealed.paleturquoise { background-color: paleturquoise}    
+.card.revealed.palevioletred { background-color: palevioletred}    
+.card.revealed.papayawhip { background-color: papayawhip}  
+.card.revealed.peachpuff { background-color: peachpuff}    
+.card.revealed.peru { background-color: peru}  
+.card.revealed.pink { background-color: pink}  
+.card.revealed.plum { background-color: plum}  
+.card.revealed.powderblue { background-color: powderblue}  
+.card.revealed.rosybrown { background-color: rosybrown}    
+.card.revealed.royalblue { background-color: royalblue}    
+.card.revealed.saddlebrown { background-color: saddlebrown}    
+.card.revealed.salmon { background-color: salmon}  
+.card.revealed.sandybrown { background-color: sandybrown}  
+.card.revealed.seagreen { background-color: seagreen}  
+.card.revealed.seashell { background-color: seashell}  
+.card.revealed.sienna { background-color: sienna}  
+.card.revealed.skyblue { background-color: skyblue}    
+.card.revealed.slateblue { background-color: slateblue}    
+.card.revealed.slategray { background-color: slategray}    
+.card.revealed.slategrey { background-color: slategrey}    
+.card.revealed.snow { background-color: snow}  
+.card.revealed.springgreen { background-color: springgreen}    
+.card.revealed.steelblue { background-color: steelblue}    
+.card.revealed.tan { background-color: tan}    
+.card.revealed.thistle { background-color: thistle}    
+.card.revealed.tomato { background-color: tomato}  
+.card.revealed.turquoise { background-color: turquoise}    
+.card.revealed.violet { background-color: violet}  
+.card.revealed.wheat { background-color: wheat}    
+.card.revealed.whitesmoke { background-color: whitesmoke}  
+.card.revealed.yellowgreen { background-color: yellowgreen}    
+.card.revealed.rebeccapurple { background-color: rebeccapurple}
