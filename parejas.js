@@ -54,8 +54,9 @@ let clickFunction = function() {
     console.log(`REVEAL: ${contador}`)
 
     if (contador == 2) {
-        checkValue = checkPair();
 
+        checkValue = checkPair();
+        
         console.log(`checkValue: ${checkValue}`)
 
         revealed = revealedArray()
@@ -66,14 +67,18 @@ let clickFunction = function() {
             }
         }
         else {
-            
-            for (let i = 0; i < revealed.length; i++) {
-                revealed[i].classList.remove("revealed");
-            }
+            setTimeout(() => {
+                
+                for (let i = 0; i < revealed.length; i++) {
+                    revealed[i].classList.remove("revealed");
+                }
+            }, 550);
         }
         contador = 0
         if (cardsArray().length == 0)
-            alert("Victory")
+            setTimeout(() => {
+                alert("Victory")
+            }, 100);
     }
 }
 
@@ -99,7 +104,6 @@ let checkPair = () =>
         if (revealed[i].classList.contains("black")) 
             cartasNegras++
     }
-
     if (cartasRojas == 2 || cartasNegras == 2)
         return true
     
