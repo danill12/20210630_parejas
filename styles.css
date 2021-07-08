@@ -7,8 +7,8 @@ body{
     display: flex;
     flex-wrap: wrap;
     background-color:sandybrown;
-    width: 500px;
-    height: 500px;
+    width: 1000px;
+    height: 1000px;
     align-items: center;
 }
 .card{
@@ -31,9 +31,52 @@ body{
 .card.black.revealed{   
     background-color: black;
 }
+
+.card.blue{
+    background-color:bisque;
+}
+.card.blue.revealed{   
+    background-color: blue;
+}
+
+.card.yellow{
+    background-color:bisque;
+}
+.card.yellow.revealed{   
+    background-color: yellow;
+}
+
+.card.green{
+    background-color:bisque;
+}
+.card.green.revealed{   
+    background-color: green;
+}
+
+.card.purple{
+    background-color:bisque;
+}
+.card.purple.revealed{   
+    background-color:purple;
+}
+
+.card.brown{
+    background-color:bisque;
+}
+.card.brown.revealed{   
+    background-color:brown;
+}
+
+.card.orange{
+    background-color:bisque;
+}
+.card.orange.revealed{   
+    background-color:orange;
+}
+
 .tutorial{
     background-color: darkcyan;
-    width: 65%;
+    width: 25%;
     height: auto;
     padding: 10px;  
 }
