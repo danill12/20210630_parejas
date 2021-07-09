@@ -12,7 +12,6 @@ let options = [
 ]  
 
 let cardsArray = () => {
-    //return Array.from(document.getElementsByClassName("card"));
     return Array.from(document.querySelectorAll(".card:not(.paired)"));
 }
 
@@ -134,9 +133,11 @@ let endGame = () => {
 
     console.log(`Contador final: ${contadorClick}`)
     contadorParejas = (contadorClick / 2) - 7
+    contadorIntentos = (contadorClick / 2)
     console.log(`Parejas erroneas: ${contadorParejas}`)
     setTimeout(() => {
-        msg = `Has fallado ${contadorParejas} veces en encontrar la pareja ideal \nHas intentado ${contadorClick} veces hasta ganar la partida`
+        msg = `Has fallado ${contadorParejas} veces en encontrar la pareja ideal<br>`
+        msg +=`Has intentado ${contadorIntentos} veces hasta ganar la partida`
         document.getElementById('messages').innerHTML = msg
     }, 100);
 }
